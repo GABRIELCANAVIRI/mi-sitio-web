@@ -1,10 +1,181 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 40px;
+/* ================================
+   CONFIGURACIÓN GENERAL
+   ================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    color: #2c3e50;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   ENCABEZADO
+   ================================ */
+
+header {
+    background-color: #090909;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* ================================
+   CONTENIDO PRINCIPAL
+   ================================ */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+
+/* ================================
+   SECCIONES
+   ================================ */
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #33a8a2;
+    font-size: 26px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #d9e2f3;
+    padding-bottom: 8px;
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+/* ================================
+   PRESENTACIÓN
+   ================================ */
+
+.presentacion {
+    text-align: center;
+}
+
+.presentacion p {
+    text-align: justify;
+}
+
+.presentacion img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 25px auto 5px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+
+/* ================================
+   LISTAS
+   ================================ */
+
+ul {
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+/* ================================
+   AUTOR
+   ================================ */
+
+.autor {
+    text-align: center;
+}
+
+.autor p {
+    text-align: center;
+}
+
+
+/* ================================
+   PIE DE PÁGINA
+   ================================ */
+
+footer {
+    background-color: #0c0c0c;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ================================
+   ADAPTACIÓN PARA CELULARES
+   ================================ */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    section p,
+    li {
+        font-size: 15px;
+    }
+
 }
